@@ -41,5 +41,20 @@
     <ClInclude Include="Encryption.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="biggerIsGreater.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeInWords.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gridSearch.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="surfaceArea.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="absolutePermutation.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

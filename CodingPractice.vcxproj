@@ -130,9 +130,14 @@
     <ClCompile Include="queensAttackII.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="absolutePermutation.h" />
+    <ClInclude Include="biggerIsGreater.h" />
     <ClInclude Include="Encryption.h" />
+    <ClInclude Include="gridSearch.h" />
     <ClInclude Include="OrganizingContainers.h" />
     <ClInclude Include="QueensAttackII.h" />
+    <ClInclude Include="surfaceArea.h" />
+    <ClInclude Include="TimeInWords.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

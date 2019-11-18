@@ -1,9 +1,15 @@
-#include "Encryption.h"
-
+#include "absolutePermutation.h"
 int main()
 {
-	string input= "if man was meant to stay on the ground god would have given us roots";
-	//getline(cin, input);
-	cout<<encryption(input);
+	int t = 15;
+	while (t--)
+	{
+		int n,k;
+		scanf_s("%d %d",  &n,&k);
+		vector<int> ap = absolutePermutation(n, k);
+		for(int i=0;i<ap.size();i++)
+			cout << ap[i] <<" ";
+		cout << endl;
+	}
 	return 0;
 }
