@@ -41,8 +41,6 @@ vector<int> climbingLeaderboard(vector<int> scores, vector<int> alice) {
 		temp = leaderboard.size() + 1 - temp;
 		result.push_back(temp);
 	}
-	/*for (int i = 0; i < result.size(); i++)
-		cout << result[i] << endl;*/
 	return result;
 
 }

@@ -56,5 +56,14 @@
     <ClInclude Include="absolutePermutation.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="larrysArray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="countSort.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="activityNotifications.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

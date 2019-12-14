@@ -131,9 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="absolutePermutation.h" />
+    <ClInclude Include="activityNotifications.h" />
     <ClInclude Include="biggerIsGreater.h" />
+    <ClInclude Include="countSort.h" />
     <ClInclude Include="Encryption.h" />
     <ClInclude Include="gridSearch.h" />
+    <ClInclude Include="larrysArray.h" />
     <ClInclude Include="OrganizingContainers.h" />
     <ClInclude Include="QueensAttackII.h" />
     <ClInclude Include="surfaceArea.h" />

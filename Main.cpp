@@ -1,15 +1,23 @@
-#include "absolutePermutation.h"
+#include "activityNotifications.h"
 int main()
 {
 	int t = 15;
 	while (t--)
 	{
-		int n,k;
-		scanf_s("%d %d",  &n,&k);
-		vector<int> ap = absolutePermutation(n, k);
-		for(int i=0;i<ap.size();i++)
-			cout << ap[i] <<" ";
+		int n,d;
+		scanf_s("%d %d", &n,&d);
+		
+		
+		vector<int> expenditure;
+		for (int i = 0; i < n; i++)
+		{
+			int temp;
+			cin >> temp;
+			expenditure.push_back(temp);
+		}
+		int count = activityNotifications(expenditure, d);
 		cout << endl;
 	}
 	return 0;
 }
+
