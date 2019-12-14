@@ -59,19 +59,20 @@ void quicksort(int arr[],int lo,int hi)
 int main()
  {
 	int T=10;
-	//scanf("%d",&T);
-	//while(T--) {
-		int n=6;
-		//scanf("%d",&n);
-		int arr[]={7,4,2,3,5,6,213,54,33490,3489};
-	//	for(int i=0;i<n;i++) {
-	//		scanf("%d",&arr[i]);
-	//	}
+	scanf("%d",&T);
+	while(T--) {
+		int n;
+		scanf("%d",&n);
+		int arr[n];
+		for(int i=0;i<n;i++) {
+			scanf("%d",&arr[i]);
+		}
 
-		quicksort(arr,0,10-1);
-		for(int i=0;i<10;i++) {
+		quicksort(arr,0,n-1);
+		for(int i=0;i<n;i++) {
 			printf("%d ",arr[i]);
 		}
-	//}
+		cout<<endl;
+	}
 	return 0;
 }
