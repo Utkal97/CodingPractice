@@ -6,6 +6,7 @@ using namespace std;
 //Hoare's partition (not general partition) :
 int partition(int arr[], int pivotIndex, int lo, int hi)
 {
+		
 	while(lo<hi) {
 
 		//we leave elements that are less than pivot as it is
@@ -27,6 +28,7 @@ int partition(int arr[], int pivotIndex, int lo, int hi)
 	}
 	
 	//place the pivot at its right position, i.e., low
+	
 	if(lo <= hi) {
 		int temp = arr[pivotIndex];
 		arr[pivotIndex] = arr[lo];
@@ -42,21 +44,18 @@ void quicksort(int arr[],int lo,int hi)
 		return;
 
 	else if(lo<hi) {
-	
 		int pivotIndex = hi;		// we choose the rightmost element to be pivot. we can also choose random element between low and high
-	
-		//cout<<"placing "<<arr[pivotIndex];
-		
+		cout<<"placing "<<arr[pivotIndex];
 		pivotIndex = partition(arr,pivotIndex,lo,hi);	//partition is a function that places the pivot at right position and returns its index
-
-		//cout<<", its correct pos is "<<pivotIndex<<endl;
 		
-		/*
+		cout<<", its correct pos is "<<pivotIndex<<endl;
+		
+		
 		for(int i=lo;i<=hi;i++) {
 			printf("%d ",arr[i]);
 		}	
 		cout<<endl;
-		*/
+		
 		
 		//now that we placed current pivot in right place, we do the same for left side and right side of pivot without touching it.
 		quicksort(arr,lo,pivotIndex-1);
@@ -69,7 +68,7 @@ void quicksort(int arr[],int lo,int hi)
 
 int main()
  {
-	int T=10;
+	int T;
 	scanf("%d",&T);
 	while(T--) {
 		int n;
